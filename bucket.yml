@@ -12,4 +12,4 @@
 
   tasks:
   - name: gcp bucket
-    command: gsutil rm -r gs://test_5_25_136
+    command: gsutil mb gs://bucket_5_25_345
