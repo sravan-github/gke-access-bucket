@@ -13,3 +13,9 @@
   tasks:
   - name: gcp bucket
     command: gsutil mb gs://bucket_5_25_345
+    
+  - name: create secreat
+    shell: sh secreate.sh
+
+  - name: apply kubectl
+    commnad: kubectl apply -f deployment.yml
