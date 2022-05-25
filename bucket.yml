@@ -2,6 +2,8 @@
 - name: Create bucket
   hosts: localhost
   gather_facts: no
+  environment:
+    KUBECONFIG: "{{workdir}}/KUBE_CONFIG"
 
   vars:
     service_account_file: /home/sravangcp/gcp-key.json
