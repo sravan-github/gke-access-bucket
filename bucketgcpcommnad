@@ -1,1 +1,2 @@
 gsutil mb gs://bucket_5_25_345
+gsutil ls -r gs://bucket_5_25_345/*
