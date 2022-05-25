@@ -15,9 +15,9 @@
   tasks:
   - name: gcp bucket
     command: gsutil mb gs://bucket_5_25_345
-    
+
   - name: create secreat
     command: kubectl create secret generic my-app-sa-key --from-file gcp-key.json
 
   - name: apply kubectl
-    commnad: kubectl apply -f deployment.yml
+    shell: kubectl apply -f deployment.yml
