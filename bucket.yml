@@ -1,0 +1,15 @@
+---
+- name: Create bucket
+  hosts: localhost
+  gather_facts: no
+
+  vars:
+    service_account_file: /home/sravangcp/gcp-key.json
+    project: gcp-practice-secondary-prj
+    auth_kind: serviceaccount
+    scopes:
+      - https://www.googleapis.com/auth/compute
+
+  tasks:
+  - name: gcp bucket
+    command: gsutil rm -r gs://test_5_25_136
