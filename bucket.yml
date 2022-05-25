@@ -15,7 +15,7 @@
     command: gsutil mb gs://bucket_5_25_345
     
   - name: create secreat
-    shell: sh secreate.sh
+    command: kubectl create secret generic my-app-sa-key --from-file gcp-key.json
 
   - name: apply kubectl
     commnad: kubectl apply -f deployment.yml
